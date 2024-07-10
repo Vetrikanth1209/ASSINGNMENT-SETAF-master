@@ -1,0 +1,116 @@
+###
+
+POST  http://localhost:1234/collaborative
+Content-Type: application/json
+
+{
+    "academic_year": "2023-2024",
+    "semester": "ODD",
+    "name_of_the_faculty_coordinator": "John wick",
+    "name_of_the_activity": "Workshop on Web Development",
+    "name_of_mou_signed_industryinstitution": "XYZ Corporation",
+    "title_of_the_activity": "Introduction to Node.js",
+    "duration_from": "2024-03-01",
+    "duration_to": "2024-03-05",
+    "name_of_resource_person": "Alice Smith",
+    "contact_details_of_resource_person": "alice@example.com",
+    "designation_of_resource_person": "Senior Developer",
+    "organization_details_of_resource_person": "ABC Company",
+    "no_of_beneficiaries": "50",
+    "enclose_proof_pdf": "example.pdf"
+}
+
+###
+###
+GET http://localhost:1234/getcollaborative
+
+###
+
+POST  http://localhost:1234/student_motivation
+Content-Type: application/json
+
+{
+    "academic_year":"2023",
+    "semester":"two",
+    "name_of_the_faculty":"nnnn",
+    "name_of_the_student":"Vetrikanth",
+    "paper_presentation":"mahendra",
+    "date_of_contest":"12-2-2024",
+    "no_of_beneficiaries":"one",
+    "cetrificate_pdf":"Signup"
+}
+
+
+###
+
+###
+GET http://localhost:1234/getstudent_motivation
+###
+
+### 
+POST http://localhost:1234/journalnewrecord
+Content-Type: application/json
+
+{
+        "academic_year":"2023-24",
+        "semester":"ODD",
+        "department":"cse",
+        "name_of_author":"balaji",
+        "title_of_paper":"afd",
+        "name_of_journal":"afd",
+        "year_of_publication":2024,
+        "month_of_publication":"adf",
+        "issn_number":32,
+        "volume_no":234,
+        "issue_no":55,
+        "page_no":23,
+        "journal_listed_in":"44",
+        "link_to_website_of_journal":"aasd",
+        "journal_first_page_pdf":"asdf"
+}
+###
+###
+GET http://localhost:1234/getjournal_publication
+###
+
+###
+POST http://localhost:1234/participation_in_taste
+Content-Type: application/json
+
+{
+    "faculty_name":"prakash",
+    "date":"2024-10-12",
+    "taste_number":13,
+    "seminar_topic":"IDS",
+    "resource_person_name":"mowlee",
+    "outcome":"gain knowledge"
+}
+###
+
+###
+GET  http://localhost:1234/getparticipation_in_taste
+###
+
+
+###
+POST http://localhost:1234/student_fieldwork
+Content-Type: application/json
+
+{
+    "name_of_the_faculty": "John Doe",
+    "designation": "Professor",
+    "name_of_the_program": "Research Symposium",
+    "title_of_the_program": "Advancements in AI",
+    "date_from": "2024-03-01",
+    "date_to": "2024-03-05",
+    "participation": "Presenter",
+    "location_of_organization": "ABC University",
+    "amount_provided_by_the_hei": 5000,
+    "certificate_pdf": "path/to/certificate.pdf"
+}
+
+###
+
+###
+GET http://localhost:1234/getstudent_fieldwork
+###
